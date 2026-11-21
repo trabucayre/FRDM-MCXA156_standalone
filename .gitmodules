@@ -1,0 +1,12 @@
+[submodule "nxp_libs/mcuxsdk-core"]
+	path = nxp_libs/mcuxsdk-core
+	url = https://github.com/nxp-mcuxpresso/mcuxsdk-core.git
+[submodule "nxp_libs/mcu-sdk-cmsis"]
+	path = nxp_libs/mcu-sdk-cmsis
+	url = https://github.com/nxp-mcuxpresso/mcu-sdk-cmsis.git
+[submodule "nxp_libs/mcux-component"]
+	path = nxp_libs/mcux-component
+	url = https://github.com/nxp-mcuxpresso/mcux-component.git
+[submodule "nxp_libs/mcux-devices-mcx"]
+	path = nxp_libs/mcux-devices-mcx
+	url = https://github.com/nxp-mcuxpresso/mcux-devices-mcx.git
