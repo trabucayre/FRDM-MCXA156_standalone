@@ -63,6 +63,21 @@ SDK_INC += \
 SDK_SRCS += \
 	${MCUX_CORE_DIR}/drivers/gpio/fsl_gpio.c
 
+# UART + debug console lite
+SDK_INC += \
+	-I${MCUX_COMPONENTS_DIR}/debug_console_lite \
+	-I${MCUX_COMPONENTS_DIR}/str \
+	-I${MCUX_COMPONENTS_DIR}/uart \
+	-I${MCUX_CORE_DIR}/drivers/lpuart
+
+SDK_SRCS += \
+	${MCUX_COMPONENTS_DIR}/debug_console_lite/fsl_debug_console.c \
+	${MCUX_COMPONENTS_DIR}/str/fsl_str.c \
+	${MCUX_COMPONENTS_DIR}/uart/fsl_adapter_lpuart.c \
+	${MCUX_CORE_DIR}/drivers/lpuart/fsl_lpuart.c
+
+SDK_DEFINES += -DSDK_DEBUGCONSOLE=1
+
 SRCS += $(TARGET).c
 
 # Adds the full configuration/linker script/... to cmake
